@@ -24,10 +24,10 @@ body {
 }
 
 .section__heading {
-    color: #152427;
-    font-size: 5rem;
-    font-weight: 800;
-    line-height: 1.2;
+    font-family: Poppins;
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.23;
 }
 
 .section__desc {
@@ -56,6 +56,33 @@ body {
 
 .btn:hover {
     opacity: 0.9;
+}
+
+.line {
+    display: inline-block;
+    content: "";
+    background: #152427;
+    width: 66px;
+    height: 2px;
+    transform: translateX(6px) translateY(-10px);
+}
+
+.group-name {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 21px;
+    color: #152427;
+    font-size: 1.6rem;
+    font-weight: 500;
+    /* line-height: 1.62; */
+}
+
+.group-name::before {
+    display: inline-block;
+    content: "";
+    width: 25px;
+    height: 1px;
+    background: #152427;
 }
 
 /* Header */
@@ -131,14 +158,18 @@ body {
 /* Hero */
 
 .hero {
-    margin: 60px 25px 0;
+    padding: 60px 25px 164px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .hero__heading {
+    font-family: Public Sans, sans-serif;
     max-width: 368px;
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1.2;
 }
 
 .hero__content {
@@ -146,7 +177,7 @@ body {
 }
 
 .hero__media {
-    max-width: 56.6%;
+    /* max-width: 56.6%; */
     position: relative;
 }
 
@@ -198,7 +229,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
-    margin-right: 25px;
     align-items: flex-end;
 }
 
@@ -224,5 +254,145 @@ body {
 }
 
 .hero__img:nth-child(2) {
-    margin-bottom: -81px;
+    margin-bottom: -77px;
+}
+
+.hero__flower {
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    right: 237px;
+    top: -25px;
+}
+
+.hero__flower:last-of-type {
+    rotate: 180deg;
+    right: 9px;
+    bottom: -130px;
+}
+
+.hero__flower-line {
+    transform: translateX(-32px) translateY(-7px);
+}
+
+/* Logo */
+
+.logo {
+    margin-top: 42px;
+}
+
+.logo__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 201px;
+    background: #e2eddf;
+    border-radius: 100.5px;
+    padding: 0 40px;
+}
+
+.logo__wrap {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo__google {
+    color: var(--primary-color-black-green, #143c3c);
+    font-family: Poppins;
+    font-size: 3.1rem;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.logo__slack-name {
+    color: var(--primary-color-black-green, #143c3c);
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.logo__slack-img {
+    margin-right: 3px;
+}
+
+.logo__agworld-name {
+    color: #163c35;
+    font-family: Poppins;
+    font-size: 2.6rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.logo__agworld-img {
+    margin-right: 11px;
+}
+
+.logo__riotinto-name {
+    color: var(--primary-color-black-green, #143c3c);
+    font-family: Sonsie One;
+    font-size: 2.3rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.logo__heroku-name {
+    color: var(--primary-color-black-green, #143c3c);
+    font-family: Poppins;
+    font-size: 1.9rem;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.995px;
+}
+
+.logo__heroku-img {
+    margin-right: 10px;
+}
+
+/* Services */
+
+.services {
+}
+
+.services__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.services__heading {
+    max-width: 520px;
+}
+
+.services__action {
+    display: flex;
+    column-gap: 17px;
+    margin-right: 73px;
+}
+
+.services__btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #e2eddf;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    transition: 0.25s;
+}
+
+.services__img {
+    color: #152427;
+    transition: 0.25s;
+}
+
+.services__btn:hover .services__img {
+    color: #fff;
+}
+
+.services__btn:hover {
+    background: #143c3c;
 }
