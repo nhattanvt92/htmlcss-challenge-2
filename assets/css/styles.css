@@ -133,6 +133,11 @@ body {
 
 .navbar__link {
     padding: 0 19px;
+    transition: 0.25s;
+}
+
+.navbar__link:hover {
+    color: #000;
 }
 
 .navbar__link.navbar__link--active {
@@ -185,7 +190,6 @@ body {
 .hero-action {
     display: flex;
     align-items: center;
-    column-gap: 36px;
     margin-top: 42px;
 }
 
@@ -194,9 +198,6 @@ body {
     height: 57px;
     line-height: 57px;
     flex-shrink: 0;
-}
-
-.hero-action__img {
 }
 
 .hero-action__play-bg {
@@ -212,6 +213,7 @@ body {
 
 .hero-action__wrap {
     position: relative;
+    margin-left: 36px;
 }
 
 .hero-action__circle {
@@ -224,6 +226,14 @@ body {
     rotate: -135deg;
     top: -7px;
     left: -7px;
+}
+
+.hero-action__text {
+    color: #152427;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66;
+    margin-left: 15px;
 }
 
 .hero__images {
@@ -368,6 +378,7 @@ body {
 }
 
 .services__heading {
+    margin-top: 12px;
     max-width: 520px;
 }
 
@@ -676,7 +687,12 @@ body {
 }
 
 .process__heading {
+    margin-top: 20px;
     max-width: 477px;
+}
+
+.project__line {
+    background: #83a17d;
 }
 
 .process__list {
