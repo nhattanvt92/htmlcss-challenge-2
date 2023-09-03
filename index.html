@@ -147,7 +147,7 @@
                                 <a href="#!" class="hero-action__play-bg">
                                     <img
                                         class="hero-action__img"
-                                        src="./assets/img/icon/play button.svg"
+                                        src="./assets/img/icon/play-button.svg"
                                         alt="Watch video"
                                     />
                                 </a>
@@ -538,14 +538,14 @@
                                 <a href="#!" class="project__link"
                                     >Browse all Projects</a
                                 >
-                                <img src="./assets/img/left arrow.svg" alt="" />
+                                <img src="./assets/img/left-arrow.svg" alt="" />
                             </div>
                         </section>
                     </div>
                     <figure class="project__video">
                         <video
-                            width="100%"
-                            height="544px"
+                            width="1140"
+                            height="544"
                             controls
                             style="object-fit: cover"
                         >
@@ -615,7 +615,7 @@
                 <div class="container">
                     <div class="blog__header">
                         <div class="blog__header-title">
-                            <p class="group-name">OUR SERVICES</p>
+                            <p class="group-name">BLOG & ARTICLES</p>
                             <h1 class="section__heading blog__heading">
                                 Take a look at our latest articles and resources
                                 <span class="line"></span>
@@ -630,11 +630,13 @@
                     <div class="blog__list">
                         <!-- item 1 -->
                         <article class="blog__item">
-                            <img
-                                src="./assets/img/blog-1.jpeg"
-                                alt=""
-                                class="blog__item-img"
-                            />
+                            <div class="blog__item-image">
+                                <img
+                                    src="./assets/img/blog-1.jpeg"
+                                    alt=""
+                                    class="blog__item-thumb"
+                                />
+                            </div>
                             <div class="blog__item-body">
                                 <a href="" class="blog__item-btn btn"
                                     >STORIES</a
@@ -651,11 +653,13 @@
                         </article>
                         <!-- item 2 -->
                         <article class="blog__item">
-                            <img
-                                src="./assets/img/blog-2.jpeg"
-                                alt=""
-                                class="blog__item-img"
-                            />
+                            <div class="blog__item-image">
+                                <img
+                                    src="./assets/img/blog-2.jpeg"
+                                    alt=""
+                                    class="blog__item-thumb"
+                                />
+                            </div>
                             <div class="blog__item-body">
                                 <a href="" class="blog__item-btn btn"
                                     >STORIES</a
@@ -672,11 +676,13 @@
                         </article>
                         <!-- item 3 -->
                         <article class="blog__item">
-                            <img
-                                src="./assets/img/blog-3.jpeg"
-                                alt=""
-                                class="blog__item-img"
-                            />
+                            <div class="blog__item-image">
+                                <img
+                                    src="./assets/img/blog-3.jpeg"
+                                    alt=""
+                                    class="blog__item-thumb"
+                                />
+                            </div>
                             <div class="blog__item-body">
                                 <a href="" class="blog__item-btn btn"
                                     >STORIES</a
@@ -695,5 +701,109 @@
                 </div>
             </section>
         </main>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__inner-left">
+                        <h2 class="footer__heading">
+                            Sign up for our newsletter
+                        </h2>
+                        <form class="footer-form">
+                            <input
+                                class="footer-form__input"
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="Enter your email"
+                            />
+                            <button class="footer-form__submit" type="submit">
+                                <svg
+                                    width="28"
+                                    height="18"
+                                    viewBox="0 0 28 18"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1 9H27M27 9L18.3333 1M27 9L18.3333 17"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </button>
+                            <div class="footer-form__line"></div>
+                        </form>
+                        <div class="footer__social">
+                            <a class="footer__social-item" href="#!">
+                                <img
+                                    src="./assets/img/icon/f.svg"
+                                    alt=""
+                                    class="social-img"
+                                />
+                            </a>
+                            <a class="footer__social-item" href="#!">
+                                <span class="social-in__outer">
+                                    <span class="social-in__inner"></span>
+                                </span>
+                            </a>
+                            <a class="footer__social-item" href="#!">
+                                <img
+                                    src="./assets/img/icon/t.svg"
+                                    alt=""
+                                    class="social-img"
+                                />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__inner-right">
+                        <!-- Footer list -->
+                        <ul class="footer__list">
+                            <!-- Footer item -->
+                            <li class="footer__item">
+                                <h3 class="footer__title">Pages</h3>
+                                <a href="#!" class="footer__link">Home</a>
+                                <a href="#!" class="footer__link">About</a>
+                                <a href="#!" class="footer__link">Blog</a>
+                                <a href="#!" class="footer__link">Blog post</a>
+                            </li>
+                            <!-- Footer item -->
+                            <li class="footer__item">
+                                <h3 class="footer__title">Product</h3>
+                                <a href="#!" class="footer__link">Home</a>
+                                <a href="#!" class="footer__link">About</a>
+                                <a href="#!" class="footer__link">Blog</a>
+                                <a href="#!" class="footer__link">Blog post</a>
+                            </li>
+                            <!-- Footer item -->
+                            <li class="footer__item">
+                                <h3 class="footer__title">Overview</h3>
+                                <a href="#!" class="footer__link">Home1</a>
+                                <a href="#!" class="footer__link">Home2</a>
+                                <a href="#!" class="footer__link">Home3</a>
+                                <a href="#!" class="footer__link">Pricing1</a>
+                            </li>
+                            <!-- Footer item -->
+                            <li class="footer__item">
+                                <h3 class="footer__title">About us</h3>
+                                <a href="#!" class="footer__link">Team</a>
+                                <a href="#!" class="footer__link">Investors</a>
+                                <a href="#!" class="footer__link">Blog</a>
+                                <a href="#!" class="footer__link">Press</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__line"></div>
+                <article class="copyright">
+                    <p class="copyright__desc">
+                        2023 Copyright by NT - All rights reserved.
+                    </p>
+                </article>
+            </div>
+        </footer>
     </body>
 </html>
